@@ -1,0 +1,18 @@
+* ,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    /* overwrites the browser default (16px). Means 1 rem is the root font size, making all font sizes now flexible to this no matter the device
+    This is set to % so its not so hard coded and reacts to user specific settings, like if theyve changed default font size because of sight.
+    62.5% of 16px is 10px. */
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}

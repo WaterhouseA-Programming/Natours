@@ -1,0 +1,51 @@
+@keyframes moveInLeft{
+    /*%ages mean what happens at certain keyframes. so 0 is start of animaitopn and 100% at the end.*/
+
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100%{
+        opacity: 1;
+        /*translate 0 is to put it how the index.html wants it.*/
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight{
+    /*%ages mean what happens at certain keyframes. so 0 is start of animaitopn and 100% at the end.*/
+
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100%{
+        opacity: 1;
+        /*translate 0 is to put it how the index.html wants it.*/
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom{
+
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    100%{
+        opacity: 1;
+        /*translate 0 is to put it how the index.html wants it.*/
+        transform: translate(0);
+    }
+}

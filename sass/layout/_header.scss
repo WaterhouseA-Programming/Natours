@@ -1,0 +1,34 @@
+.header{
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    /* the & means basically an extension of .header, like we've copied it in its place. */
+    &__logo-box{
+        position: absolute;
+        /*uses .header as its position to count top and left from */
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo{
+        height: 3.5rem;
+    }
+    
+    /* put the order of css in the order it appearss in html to make things easier to follow*/
+    &__text-box{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        /* if you did the above without the transform, you will see the element is weirdly positioned. It will be too far to the right. 
+        Thats because where the element is being positioned from is the top left corner of the box. 
+        Transform changes where the thing is being positioned from, so now the element will be positioned 50% top and left relating to the middle of the box.*/
+        transform: translate(-50%, -50%);
+        /*background-color: red;*/
+        text-align: center;
+    }
+}
